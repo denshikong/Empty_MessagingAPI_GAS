@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<html>
+  <head>
+  <title>Simple_Screen</title>
+    <base target="_top">
+  </head>
+  <?!= HtmlService.createHtmlOutputFromFile('dev/js').getContent(); ?><!--js.html-->
+  <body>
+  
+    <center>
+      <h2>テキスト</h2>
+        <input type="text" id="text"><br>
+        <input type="button" id="run" onClick="dev()" value="送信">
+
+      <h2>結果</h2>
+      <pre>
+      <font size="4">
+      <p id="result">◇ver3.000<p>
+      </font>
+      </pre>
+    </center>
+    
+  </body>
+</html>
