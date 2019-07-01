@@ -1,5 +1,5 @@
 function reply_test(){
-  var reply=new Reply([{type:"text",text:"テキストはかもされました"}]);
+  var reply=new Reply([{type:"text",text:"テスト"}]);
   reply.send=function(){
     return [this._url(),this._package()];
   }
@@ -11,6 +11,7 @@ var Reply=function(mes_arg,quick_arg){
   this.quick=quick_arg|| null;
 };
 Reply.prototype.send=function(){
+  if(LINE.source.userId==="Developer"){Logger.log(this._payload()); throw "TEST PASSED";};//optional
   UrlFetchApp.fetch(this._url(),this._package());
 }
 Reply.prototype._url=function(){
