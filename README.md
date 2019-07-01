@@ -2,21 +2,28 @@
 It's Empty LINE Messaging API you can use instantly for GAS
 
 ◎Changed points
+
 ・No longer you need aditional libraries
+
 ・Deleted Unnecessary interfaces and functions
+
 ・Significant improvement of readability
+
 ・Objects became more loosely coupled
 
 ◎Contents
+
 ◯LINE.gs
 It's a dummy messages sent from LINE.inc
 It will be overwritten when get run from phone
 
 ◯Payload.gs
+
 It includes mes-object(it stores　massages　up to 5)
 and quick-object(it stores quick_reply items up to 13)
 
 ◯Reply.gs
+
 It sends packed messages to LINE.inc
 
 ◯Leave.gs
